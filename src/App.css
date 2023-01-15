@@ -1,0 +1,67 @@
+:root {
+  --tertiary: #E0E7EB;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.dragable {
+  position: absolute;
+  cursor: move;
+}
+
+.content {
+  height: 100;
+  overflow: auto;
+}
+
+.btn.glass:hover {
+  background-color: #373737;
+}
+
+.glass {
+  background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  backdrop-filter: blur(21px);
+  -webkit-backdrop-filter: blur(5px);
+  border: .5px solid rgba(255, 255, 255, 0.2);
+}
+
+.divider {
+  width: 1px;
+  height: 16px;
+  background-color: var(--tertiary);
+}
+
+.board {
+  background: linear-gradient(92.18deg, rgba(255, 255, 255, 0.4) 5.65%, rgba(255, 255, 255, 0) 97.91%);
+  backdrop-filter: blur(21px);
+}
+
+.screen {
+  position: absolute;
+  inset: 0;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nowarp {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 24px 0;
+}
+
+@media screen and (max-width:1380px) {
+  .header {
+    flex-direction: column;
+    justify-content: start;
+    row-gap: 1rem;
+  }
+}
